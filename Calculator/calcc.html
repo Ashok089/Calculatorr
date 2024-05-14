@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+  <title>Velocity-Acceleration Calculator</title>
+
+</head>
+
+<body class="bg-cover bg-no-repeat h-screen flex flex-col items-center justify-center font-sans" style="background-image: url('https://img.freepik.com/free-photo/fantasy-style-galaxy-background_23-2151114393.jpg');">
+
+  <div class="calculator-container bg-white rounded-lg shadow-md p-8 flex flex-col gap-4 mx-5 md:mx-10 " >
+    <h1 class="text-2xl font-semibold text-center">Velocity-Acceleration Calculator</h1>
+    
+    <div class="speed flex flex-col gap-2">
+
+      <p class="text-gray-700 font-bold">Enter Speed (in meter) :</p>
+      <input type="text" id="inspeed" class="rounded-md border border-blue-300 px-3 py-2 ">
+
+    </div>
+
+    <div class="time flex flex-col gap-2">
+
+      <p class="text-gray-700 font-bold">Enter Time (in second) :</p>
+      <input type="text" id="intime" class="rounded-md border border-blue-300 px-3 py-2 ">
+
+    </div>
+
+    <button class="button text-black bg-blue-400 px-8 py-2 rounded-md  hover:bg-blue-600 ">
+      <span>Calculate</span>
+    </button>
+
+    <div class="results flex flex-col gap-4">
+
+      <div class="velocity"><h2>Velocity:</h2></div>
+      <div class="acceleration"><h2>Acceleration:</h2></div>
+
+    </div>
+
+  </div>
+
+        <script src="./calc.js"></script>
+</body>
+</html>
